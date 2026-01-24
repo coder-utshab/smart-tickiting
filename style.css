@@ -144,8 +144,8 @@
 
 .offer-cards {
   display: flex;
-  justify-content: space-between; /* 🔥 left & right corner */
-  max-width: 1600px;               /* ⭐ container width */
+  justify-content: space-between; 
+  max-width: 1600px;               
   margin: 24px auto;
 }
 
@@ -191,3 +191,165 @@
 
 
 
+/* greenline paribahan card2 section */
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: #f4f6f9;
+}
+
+/* MAIN CARD */
+.ticket-card{
+  max-width: 920px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+/* LEFT PART */
+.left-part{
+  flex: 3;
+}
+
+/* BUS HEADER */
+.bus-header{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.bus-logo{
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.bus-header h3{
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.bus-header p{
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ROUTE & TIME */
+.route-time{
+  display: flex;
+  gap: 48px;
+  margin-bottom: 14px;
+}
+
+.route,
+.time{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.route img,
+.time img{
+  width: 18px;
+}
+
+.route p,
+.time p{
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.route strong,
+.time strong{
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* EXTRA INFO */
+.extra-info{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.info-item{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #374151;
+}
+
+.info-item img{
+  width: 14px;
+}
+
+/* MIDDLE DIVIDER */
+.middle-divider{
+  height: 120px;
+  border-left: 2px dashed #22c55e;
+}
+
+/* RIGHT PART */
+.right-part{
+  flex: 1;
+  text-align: center;
+}
+
+.right-part img{
+  width: 24px;
+  margin-bottom: 6px;
+}
+
+.right-part h2{
+  font-size: 22px;
+  font-weight: 700;
+  color: #22c55e;
+  margin-bottom: 4px;
+}
+
+.right-part p{
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+  .ticket-card{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .route-time{
+    gap: 20px;
+  }
+
+  .middle-divider{
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-top: 2px dashed #22c55e;
+    margin: 16px 0;
+  }
+
+  .right-part{
+    text-align: left;
+  }
+}

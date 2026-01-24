@@ -1,0 +1,134 @@
+/* navbar section */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: #ffffff;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #16a34a;
+}
+
+.bus-btn {
+  background: #e8f7ee;
+  color: #16a34a;
+  border: 1px solid #16a34a;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.bus-btn:hover {
+  background: #16a34a;
+  color: white;
+}
+
+
+/* card section */
+.banner{
+  max-width:1600px;
+  height:550px;
+  margin:24px auto;
+  background:url("./images/banner.png") center/cover no-repeat;
+  border-radius:24px;
+  position:relative;
+  color:#fff;
+  text-align:center;
+}
+
+.banner-content{
+  padding-top:120px;
+}
+
+.banner h1{font-size:44px;}
+.banner span{color:#22c55e;}
+
+.banner button{
+  margin-top:16px;
+  padding:10px 22px;
+  background:#22c55e;
+  border:0;
+  border-radius:10px;
+  color:#fff;
+}
+
+.stats{
+  position:absolute;
+  bottom:-40px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:20px;
+}
+
+.stats div{
+  background:#fff;
+  color:#000;
+  padding:16px 24px;
+  border-radius:14px;
+  min-width:160px;
+}
+
+.offers{
+  margin:100px auto;
+  text-align:center;
+}
+
+.offer-cards{
+  display:flex;
+  justify-content:center;
+  gap:24px;
+  margin:24px 0;
+}
+
+.card{
+  width:260px;
+  padding:24px;
+  border-radius:16px;
+}
+
+.yellow{background:#facc15;}
+.pink{background:#fda4af;}
+
+.see{
+  padding:10px 20px;
+  border:1px solid #22c55e;
+  background:none;
+  border-radius:10px;
+  color:#22c55e;
+}
+

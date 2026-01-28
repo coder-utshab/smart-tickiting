@@ -30,13 +30,13 @@
 <h1 class="text-white text-6xl font-extrabold mb-6 leading-tight"> End-to-End Travel With<br> <span class="text-[#1DD100]"> P Paribahan</span></h1>
 <p class="text-white text-lg font-normal mb-8 max-w-2xl">Yes you can run units tests and view the results directly within the app.<br>
 integrated testing features allow for a streamlined.</p>
-<button class="btn bg-[#1DD100] text-[#030712] font-bold rounded-xl">BUY TICKETS</button>
+<button onclick="play()" class="btn bg-[#1DD100] text-[#030712] font-bold rounded-xl">BUY TICKETS</button>
  </div>
 </header>
 
 
 <!--  3 Ta card ar section -->
-<section class="container mx-auto px-8 lg:px-24 w-full flex justify-center -mt-16 mb-24 relative z-10">
+<section class="mx-auto px-8 lg:px-24 w-full flex justify-center -mt-16 mb-24 relative z-10">
   <div class="flex flex-col md:flex-row gap-6 w-full max-w-5xl justify-center">
 
     <!-- Card 1 -->
@@ -70,7 +70,7 @@ integrated testing features allow for a streamlined.</p>
 
 
 <!-- Best offer Section -->
- <section class="container mx-auto px-8 lg:px-24 mb-24">
+ <section class="container mx-auto px-8 lg:px-24 mb-24 hidden">
   <h2 class="text-4xl font-bold text-center mb-12 text-[#030712]">Best offers for you</h2>
   <div class=" flex flex-col lg:flex-row gap-6 mb-12">
     <!-- cupon number 1 -->
@@ -113,7 +113,7 @@ integrated testing features allow for a streamlined.</p>
 
 
  <!-- P.H paribahan section -->
-  <section class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px] pb-24" id="Booking">
+  <section class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px] pb-24 hidden" id="Booking">
     <div class="container mx-auto px-8 lg:px-24 pt-24">
 <!-- header section -->
 
@@ -447,7 +447,7 @@ integrated testing features allow for a streamlined.</p>
   </div>
   </section>
   <!-- footer section -->
-   <footer class="bg-[#030712] text-white py-24 px-8 lg:px-32">
+   <footer class="bg-[#030712] text-white py-24 px-8 lg:px-32 hidden">
     <div class="container mx-auto">
       <div class="flex flex-col md:flex-row  justify-between items-center mb-12 text-center md:text-left">
         <div>
@@ -478,6 +478,6 @@ integrated testing features allow for a streamlined.</p>
     </div>
     </div>
    </footer>
-
+<script src="script/smart-ticket.js"></script>
 </body>
 </html>
